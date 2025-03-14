@@ -16,7 +16,7 @@ cityInput?.addEventListener("input", () => {
 const fetchWeather = (city: string | number) => {
   if (typeof city === "number") {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/zip?zip=${city},DE&appid=${apiKey}`
+      `https://api.openweathermap.org/geo/1.0/zip?zip=${city},DE&appid=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -28,7 +28,7 @@ const fetchWeather = (city: string | number) => {
       .catch((err) => console.error(err));
   } else {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
