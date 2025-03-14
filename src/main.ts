@@ -1,6 +1,8 @@
 import { GeoData, WaetherData } from "./types/types";
 
-const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
+const apiKey = "bdcaff9cf7896aa03cd665ece7d83d76";
+
+// const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
 // console.log("API KEY", apiKey);
 
 const searchResultDiv = document.querySelector("#search-results");
